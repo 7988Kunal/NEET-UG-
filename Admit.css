@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  margin-top:10px;
+}
 .m2{
   text-align: center;
   width:100%;
