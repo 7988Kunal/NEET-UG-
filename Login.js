@@ -42,10 +42,10 @@ form.addEventListener(('submit'),(e)=>{
 const sendData=(sRate,count)=>{
   if(sRate===count){
     swal("Important information","Registration process for NEET(UG)-2025 will start in due course of time please stay tune & visit website regularly for any Fuupdate.","info");
-  }*/
+  }
    //swal("Success!!","you are login","success");
     //location.href="/JEE(Main).html";
-  }/*else{
+  /*else{
     swal("Error","your scorecard is not generated","error");
   }*/
 }
