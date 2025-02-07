@@ -461,7 +461,7 @@ small{
   bottom:127px
 }
 
-/*@media (min-width:870px){
+@media (min-width:870px){
   #apple{
     width:400px;
     position:relative;
@@ -684,7 +684,7 @@ small{
     display:flex;
     justify-content: center;
   }*/
-  /*#instruction{
+  #instruction{
     font-size:15px;
   }
   #roy{
@@ -724,7 +724,7 @@ small{
     right:10px;
     top:5px;
   }*/
- /* #health{
+  #health{
     height:50px;
     width:200px;
   }
@@ -747,7 +747,7 @@ small{
     position:relative;
     top:10px;
   }*/
-  /*.panel{
+  .panel{
     height:45px;
   }
   .panel b{
@@ -764,4 +764,4 @@ small{
   .scorepage{
     height:1000px;
   }
-}*/
+}
