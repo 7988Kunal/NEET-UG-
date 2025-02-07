@@ -4,11 +4,11 @@
 }
 .m2{
   text-align: center;
-  width:100%;
+  /*width:100%;*/
 }
 
 header{
-  width:100%;
+  /*width:100%;*/
 }
 #health{
   width:250px;
@@ -16,7 +16,7 @@ header{
 }
 .scorepage{
   background-color: #fff;
-  width:90%;
+  /*width:90%;
   margin-left:5%;
 /*width:85%;*/
 /* margin-left:7.5%;*/
