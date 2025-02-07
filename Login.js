@@ -41,7 +41,7 @@ form.addEventListener(('submit'),(e)=>{
 
 const sendData=(sRate,count)=>{
   if(sRate===count){
-    swal("Important information","Registration process for NEET(UG)-2025 will start in due course of time please stay tune & visit website regularly for any Fuupdate.","info");
+    swal("Important information","Registration process for NEET(UG)-2025 will start in due course of time please stay tunned & visit website regularly for any further updates.","info");
   }
    //swal("Success!!","you are login","success");
     //location.href="/JEE(Main).html";
