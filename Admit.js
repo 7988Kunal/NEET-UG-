@@ -66,9 +66,11 @@ marks.addEventListener(('submit'),(e)=>{
 
 const sendData=(sRate,count)=>{
   if(sRate===count){
+    swal("Server Under Maintenance ","File Not Found 404 Error","info");
+  }
   // swal("Success","","success");
-    location.href="/Rank.html";
-  }/*else{
+    //location.href="/Rank.html";
+  /*else{
     swal("Error","your scorecard is not generated","error");
   }*/
 }
@@ -99,7 +101,7 @@ const valiDate=()=>{
     setErrorMsg(apple,'application number must contains 12 digits number only');
   }else if(appleVal[0]!=="2"){
     setErrorMsg(apple,'Invalid first digit in application no.');
-  }else if(appleVal[1]!=="4"){
+  }else if(appleVal[1]!=="5"){
     setErrorMsg(apple,'Invalid second digit in application no.');
   }
    else{
