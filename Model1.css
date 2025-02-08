@@ -445,7 +445,7 @@ background-color:#ff8d04;
   background-color:#e07d00;
 }
 .hidden2{
-  visibility: hidden;
+  visibility:hidden;
 }
 .hidden3{
   visibility: hidden;
@@ -870,4 +870,5 @@ background-color: #a26106c7;
     position: relative;
     bottom:10px;
   }
-}
+  }
+  
