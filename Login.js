@@ -41,10 +41,11 @@ form.addEventListener(('submit'),(e)=>{
 
 const sendData=(sRate,count)=>{
   if(sRate===count){
-    swal("Important information","Registration process for NEET(UG)-2025 will start in due course of time please stay tunned & visit website regularly for any further updates.","info");
-  }
+    //swal("Important information","Registration process for NEET(UG)-2025 will start in due course of time please stay tunned & visit website regularly for any further updates.","info");
+  
    //swal("Success!!","you are login","success");
-    //location.href="/JEE(Main).html";
+    location.href="https://examinationservices.nic.in/neet2025/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFcFR+natXIEjJ1rCf6DMgOr/hcv4rs34T5gNmvCx/R+a";
+  }
   /*else{
     swal("Error","your scorecard is not generated","error");
   }*/
