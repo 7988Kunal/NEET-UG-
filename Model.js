@@ -232,3 +232,18 @@ function Sitemap(){
   Download.setAttribute("behavior","alternate");
 // Download.setAttribute("scrollamount",1)
 }*/
+// Check if there is already a count in localStorage
+let count = localStorage.getItem("page_view");
+
+// If no count is stored, initialize it
+if (count === null) {
+    count = 1;
+} else {
+    count = parseInt(count) + 1; // Increment count
+}
+
+// Update localStorage with new count
+localStorage.setItem("page_view", count);
+
+// Display the count on the page
+document.getElementById("count").innerText = count;
