@@ -596,7 +596,7 @@ background-color: #a26106c7;
 #copy{
   background-color: #2323299b;
   color: #fff;
-  font-size:10px;
+ /* font-size:10px;*/
   display: flex;
   height:35px;
   align-items: center;
