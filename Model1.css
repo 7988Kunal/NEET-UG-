@@ -696,7 +696,13 @@ background-color: #a26106c7;
       font-size:1.2em;
       margin-left:20px;
     }
-
+    #update-info {
+      font-family: Arial, sans-serif;
+      text-align:center;
+      padding: 10px;
+      background: #f2f2f2;
+      border: 1px solid #ccc;
+    }
 
 
 
