@@ -697,10 +697,11 @@ background-color: #a26106c7;
       margin-left:20px;
     }
     #update-info {
+      color:rgb(7,186,233);
       font-family: Arial, sans-serif;
       text-align:center;
       padding: 10px;
-      background: #f2f2f2;
+      background:rgb(16,17,17);
       border: 1px solid #ccc;
     }
 
