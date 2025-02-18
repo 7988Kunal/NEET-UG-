@@ -674,20 +674,26 @@ background-color: #a26106c7;
 .title-font-normal{
   margin-left:18px;
 }
-.clock {
-      margin-left:15px;
-      margin-right:15px;
-      font-size:3em;
-      background:#20232a;
-      padding: 10px 30px;
-      border-radius:8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      color: #61dafb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Courier New', Courier, monospace;
-}
+    /* CSS Styling with blue and black colors */
+    .container {
+      color:rgb(7,186,233); /* Deep Sky Blue text */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background:rgb(16,17,17); /* Dark blue overlay */
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+      display:flex;
+      justify-content:center;
+    }
+    .date {
+      font-size:2em;
+      margin-bottom:0.3em;
+    }
+    .time {
+      font-size:2em;
+      margin-left:20px;
+    }
 
 
 
