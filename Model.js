@@ -232,18 +232,23 @@ function Sitemap(){
   Download.setAttribute("behavior","alternate");
 // Download.setAttribute("scrollamount",1)
 }*/
-// Check if there is already a count in localStorage
-let count = localStorage.getItem("page_view");
-
-// If no count is stored, initialize it
-if (count === null) {
-    count = 1;
-} else {
-    count = parseInt(count) + 1; // Increment count
-}
-
-// Update localStorage with new count
-localStorage.setItem("page_view", count);
-
-// Display the count on the page
-document.getElementById("count").innerText = count;
+    // JavaScript to update the clock every second
+    function updateTime() {
+      const clockElement = document.getElementById('clock');
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+      
+      // Format time as HH:MM:SS with leading zeros if needed
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+      
+      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    
+    // Update the clock every second
+    setInterval(updateTime, 1000);
+    // Initial call to display time immediately on load
+    updateTime();
