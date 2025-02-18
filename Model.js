@@ -259,3 +259,13 @@ function Sitemap(){
     // Update the clock every second
     setInterval(updateDateTime, 1000);
     updateDateTime(); // Initial call to display time immediately
+    // Create a Date object from the document's last modified timestamp
+    const lastModifiedDate = new Date(document.lastModified);
+    
+    // Format the date to show only the date (without time)
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = lastModifiedDate.toLocaleDateString(undefined, options);
+    
+    // Display the formatted date in the div
+    document.getElementById('update-info').textContent = "Last updated: " + formattedDate;
+
