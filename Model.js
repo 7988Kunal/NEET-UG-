@@ -232,23 +232,30 @@ function Sitemap(){
   Download.setAttribute("behavior","alternate");
 // Download.setAttribute("scrollamount",1)
 }*/
-    // JavaScript to update the clock every second
-    function updateTime() {
-      const clockElement = document.getElementById('clock');
+        // Function to update date and time
+    function updateDateTime() {
       const now = new Date();
+      
+      // Format date as "Month Day, Year" (e.g., "February 18, 2025")
+      const options = { month: 'long', day: 'numeric', year: 'numeric' };
+      const dateString = now.toLocaleDateString(undefined, options);
+      
+      // Format time as HH:MM:SS with leading zeros
       let hours = now.getHours();
       let minutes = now.getMinutes();
       let seconds = now.getSeconds();
       
-      // Format time as HH:MM:SS with leading zeros if needed
       hours = hours < 10 ? '0' + hours : hours;
       minutes = minutes < 10 ? '0' + minutes : minutes;
       seconds = seconds < 10 ? '0' + seconds : seconds;
       
-      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      
+      // Update the HTML elements
+      document.getElementById('date').textContent = dateString;
+      document.getElementById('time').textContent = timeString;
     }
     
     // Update the clock every second
-    setInterval(updateTime, 1000);
-    // Initial call to display time immediately on load
-    updateTime();
+    setInterval(updateDateTime, 1000);
+    updateDateTime(); // Initial call to display time immediately
