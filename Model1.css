@@ -675,6 +675,8 @@ background-color: #a26106c7;
   margin-left:18px;
 }
 .clock {
+      margin-left:15px;
+      margin-right:15px;
       font-size:4em;
       background: #20232a;
       padding: 20px 40px;
