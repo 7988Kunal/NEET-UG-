@@ -675,7 +675,7 @@ background-color: #a26106c7;
   margin-left:18px;
 }
 .clock {
-      font-size: 4em;
+      font-size:4em;
       background: #20232a;
       padding: 20px 40px;
       border-radius: 8px;
@@ -684,8 +684,6 @@ background-color: #a26106c7;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
       font-family: 'Courier New', Courier, monospace;
 }
 
