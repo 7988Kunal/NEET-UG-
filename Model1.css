@@ -677,12 +677,12 @@ background-color: #a26106c7;
 .clock {
       margin-left:15px;
       margin-right:15px;
-      font-size:4em;
-      background: #20232a;
-      padding: 20px 40px;
-      border-radius: 8px;
+      font-size:3em;
+      background:#20232a;
+      padding: 10px 30px;
+      border-radius:8px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
-     color: #61dafb;
+      color: #61dafb;
       display: flex;
       justify-content: center;
       align-items: center;
