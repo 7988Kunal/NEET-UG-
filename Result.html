@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET UG 2025 Result Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>NEET UG 2025 Scorecard</h2>
+    <form id="resultForm">
+        <label for="applicationNumber">Application Number</label>
+        <input disabled type="text" id="applicationNumber" required>
+
+        <label for="dob">Date of Birth</label>
+        <input disabled type="date" id="dob" required>
+
+        <label for="emailOrPhone">Phone Number or Email ID</label>
+        <input disabled type="text" id="emailOrPhone" required>
+
+        <div>
+            <input disabled type="checkbox" id="robotCheck" required>
+            <label for="robotCheck">I'm not a robot</label>
+        </div>
+
+        <button disabled type="submit">Get Score</button>
+        <div class="error" id="errorMessage"></div>
+    </form>
+
+    <div class="result" id="result">
+        <h3>Your NEET UG 2025 Score</h3>
+        <p><strong>Application Number:</strong> <span id="appNumber"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="dobResult"></span></p>
+        <p><strong>Score:</strong> <span id="score"></span>/720</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('resultForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get values
+        const appNumber = document.getElementById('applicationNumber').value;
+        const dob = document.getElementById('dob').value;
+        const emailOrPhone = document.getElementById('emailOrPhone').value;
+        const robotCheck = document.getElementById('robotCheck').checked;
+        const errorMessage = document.getElementById('errorMessage');
+        const resultSection = document.getElementById('result');
+
+        // Validation
+        if (appNumber.length < 10) {
+            errorMessage.innerText = "Application Number must be at least 10 characters.";
+            return;
+        }
+
+        if (!emailOrPhone.includes('@') && emailOrPhone.length !== 10) {
+            errorMessage.innerText = "Enter a valid Email ID or 10-digit Phone Number.";
+            return;
+        }
+
+        if (!robotCheck) {
+            errorMessage.innerText = "Please confirm you are not a robot.";
+            return;
+        }
+
+        // Clear error message
+        errorMessage.innerText = "";
+
+        // Generate a random score (for demo purposes)
+        const randomScore = Math.floor(Math.random() * 721);
+
+        // Display result
+        document.getElementById('appNumber').innerText = appNumber;
+        document.getElementById('dobResult').innerText = dob;
+        document.getElementById('score').innerText = randomScore;
+        resultSection.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
