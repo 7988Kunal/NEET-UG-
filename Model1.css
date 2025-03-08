@@ -703,7 +703,7 @@ background-color: #a26106c7;
       padding: 10px;
       background:black;
     }
-.Download a{
+/*.Download a{
   animation: download .6s linear 0s infinite normal;
 }
 @keyframes download{
@@ -715,11 +715,11 @@ background-color: #a26106c7;
      color:transparent;
    -webkit-text-stroke: 1.2px #28a745;
   }*/
-100%{
+/*100%{
   color:transparent;
   -webkit-text-stroke: 1.1px #dc3545;
   }
-}
+}*/
 
 
 
