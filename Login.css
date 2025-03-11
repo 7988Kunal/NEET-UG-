@@ -565,9 +565,32 @@ audio{
   position:relative;
   bottom:300px;
 }
-.login{
-  height:700px;
+#loginpage{
+  margin-bottom:0%;
+  margin-left:1%;
+  margin-right:1%;
+  margin-top:0%;
+  height:620px;
 }
+#pic{
+  height:240px;
+}
+#reg0,.reg{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  width:100%;
+  margin-left:0px;
+  height:25px;
+}
+.login{
+  margin-bottom:1%;
+  margin-left:1%;
+  margin-right:1%;
+  margin-top:3%;
+  height:750px;
+  }
 }
 @media (max-width:330px){
 #satya{
