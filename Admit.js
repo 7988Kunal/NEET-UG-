@@ -66,13 +66,14 @@ marks.addEventListener(('submit'),(e)=>{
 
 const sendData=(sRate,count)=>{
   if(sRate===count){
-    swal("Server Under Maintenance ","File Not Found 404 Error","info");
+    //swal("Server Under Maintenance ","File Not Found 404 Error","info");
+  
+   // swal("Success","","success");
+    location.href="https://examinationservices.nic.in/NEET2025/DownloadAdmitCard/frmAuthforCityNEET.aspx?enc=Ei4cajBkK1gZSfgr53ImFcFR+natXIEjJ1rCf6DMgOr/hcv4rs34T5gNmvCx/R+a";
   }
-  // swal("Success","","success");
-    //location.href="/Rank.html";
-  /*else{
+   else{
     swal("Error","your scorecard is not generated","error");
-  }*/
+  }
 }
 const successMsg=()=>{
   let toul=document.getElementsByClassName("toul");
