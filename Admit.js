@@ -71,7 +71,7 @@ const sendData=(sRate,count)=>{
    // swal("Success","","success");
     location.href="https://examinationservices.nic.in/NEET2025/DownloadAdmitCard/frmAuthforCityNEET.aspx?enc=Ei4cajBkK1gZSfgr53ImFcFR+natXIEjJ1rCf6DMgOr/hcv4rs34T5gNmvCx/R+a";
   }
-   else{
+   else if{
     swal("Error","your scorecard is not generated","error");
   }
 }
